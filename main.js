@@ -98,8 +98,8 @@ function startTimer() {
 function stopTimer() {
     clearInterval(interval);
   
-    mainButton.dataset.action = 'start';
-    mainButton.textContent = 'start';
+    mainButton.dataset.action = 'Start';
+    mainButton.textContent = 'Start';
     mainButton.classList.remove('active');
   }
 
@@ -171,7 +171,7 @@ function resetTimer() {
   remainingTime.seconds = `00`
   updateClock();
 
-  mainButton.dataset.action = 'start';
-  mainButton.textContent = 'start';
+  mainButton.dataset.action = 'Start';
+  mainButton.textContent = 'Start';
   mainButton.classList.remove('active');
 }
