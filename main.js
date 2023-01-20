@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const mainButton = document.getElementById('js-btn');
 mainButton.addEventListener('click', () => {
     const { action } = mainButton.dataset;
-    if (action === 'start') {
+    if (action === 'Start') {
       startTimer();
     } else {
         stopTimer();
@@ -57,7 +57,7 @@ function startTimer() {
 
     sessionCount.textContent = timer.sessions;
 
-    if (timer.mode === 'pomodoro') timer.sessions++;
+    if (timer.mode === 'pomodoro' && timer.remainingTime.total == 0 ) timer.sessions++;
     
     mainButton.dataset.action = 'stop';
     mainButton.textContent = 'stop';
