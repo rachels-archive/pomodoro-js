@@ -21,4 +21,11 @@ Repeat as many times as desired or until work has been completed.
 + Select **restart** option to reset the timer.
 
 ## Resources
-Learn how to build this app here: 
+Reference Tutorial: https://freshman.tech/pomodoro-timer
+
+Some things I did differently from to the tutorial:
+1. Used Vanilla JS instead of jQuery
+2. Different styling
+3. Only increment session count when remaining time of Pomodoro is 0  
+4. Display sesssion count so users can track number of Pomodoro cycles
+5. Omitted the progress bar, sound and notification steps
